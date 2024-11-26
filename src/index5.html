@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body class="sm:m-auto">
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px]">
+        <div class="flex gap-[500px] sm:gap-10 md:gap-10">
+            <img src="./img/Logo (2).png" alt="">
+            <div class="flex items-center gap-8">
+                <p class="sm:hidden md:hidden">Home</p>
+                <p class="sm:hidden md:hidden">About</p>
+                <p class="sm:hidden md:hidden">Blog</p>
+                <p class="sm:hidden md:hidden">Pricing</p>
+
+
+                <select name="" id="pageSelector" onchange="navigateToPage()">
+                    <option value="" disabled selected>
+                        <p style="font-size: 18px; font-weight: bold;">Contact Us -></p>
+                    <option value="index1.html">Page 1</option>
+                    <option value="index2.html">Page 2</option>
+                    <option value="index3.html">Page 3</option>
+                    <option value="index4.html">Page 4</option>
+                    <option value="index5.html">Page 5</option>
+                    <option value="index6.html">Page 6</option>
+
+                </select>
+
+                <script>
+                    function navigateToPage() {
+                        const selector = document.getElementById('pageSelector');
+                        const selectedPage = selector.value;
+                        if (selectedPage) {
+                            window.location.href = selectedPage;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </navbar>
+    <header>
+        <div
+            class="bg-pattern bg-cover h-[400px] w-[800px] flex flex-col items-center justify-center sm:w-[100%] sm:text-center sm:items-center">
+
+            <p style="font-size: 65px; width: 100%;"
+                class="sm:text-center pl-[110px] sm:pl-2 md:pl-2 sm:pt-32 md:pt-32">Activity &
+                Updates</p>
+            <div class="flex items-start gap-3 sm:flex-col sm:items-center sm:gap-2">
+                <img src="img/Line 69.png" alt="" style="padding-top: 10px;">
+                <p style="font-size: 25px; font-weight: 500;" class="sm:text-center">
+                    Our biggest challenge is making sure we're <br> always designing and building products that <br>
+                    will help you run your business better.
+                </p>
+            </div>
+            <div class="flex justify-center gap-6 pl-[60px] mt-20 sm:justify-start sm:pl-3 sm:flex-wrap sm:gap-9">
+                <p style="font-weight: 500; text-decoration: underline;">View all</p>
+                <p style="color: gray;">Design</p>
+                <p style="color: gray;">Articles</p>
+                <p style="color: gray;">Product</p>
+                <p style="color: gray;" class="hidden sm:block">So</p>
+                <p style="color: gray;" class="sm:hidden md:hidden">Software Development</p>
+                <p style="color: gray;" class="sm:hidden md:hidden">Customer Success</p>
+            </div>
+        </div>
+        <div class="flex justify-center gap-5 mt-16">
+            <div class="flex flex-col gap-3 items-start">
+                <img src="./img/Image (16).png" alt="" style="width: 450px;">
+                <p style="color: gray;">Published in Insight Jan 30, 2021</p>
+                <p style="font-size: 27px; font-weight: 500;">Practice making User Flow</p>
+                <p style="color: gray;">In this article, we'll cover how to br
+                    create user flows</p>
+            </div>
+            <div class="ml-[-60px] mr-[-60px] mt-32 z-10 sm:mt-14 sm:pr-[-50px] md:mt-14 md:pr-[-50px]">
+                <img src="./img/Group 3258.png" alt="">
+            </div>
+            <div class="flex flex-col gap-3 items-start sm:hidden md:hidden">
+                <img src="./img/Image (17).png" alt="" style="width: 450px;">
+
+                <p style="color: gray;">Published in Insight Jan 30, 2021 by : Albert Sans</p>
+                <p style="font-size: 27px; font-weight: 500;">Overview of the Design <br> Principles</p>
+                <p style="color: gray;">What are Design Principles?… To understand <br> design principles, we first
+                    discuss the principles. </p>
+            </div>
+            <div class="hidden sm:block sm:ml-10 md:block md:ml-10">
+                <img src="./img/Frame 1171275311.png" alt="" style="width: 168px;">
+            </div>
+            <div class="sm:hidden md:hidden">
+                <img src="./img/Frame 1171275125.png" alt="" style="width: 198px;">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mt-10">
+            <div
+                class="bg-[#1D1E25] flex pt-16 justify-center gap-10 sm:flex-col sm:items-center sm:p-3 md:flex-col md:items-center md:p-3">
+                <div>
+                    <img src="./img/Rectangle 34.png" alt="" style="width: 500px;">
+                    <p style="font-size: 36px; color: white;">How we perform long-running <br> tasks using AWS services
+                    </p> <br>
+                    <p style="font-size: 18px; color: gray;">Webflow is web design tool as well as a hosting platform
+                        <br>
+                        and CMS all in one. While you are probably familiar with all <br> of these, they are usually
+                        entirely separate tools.
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/Rectangle 35.png" alt="" style="width: 550px;">
+                    <p style="font-size: 40px; text-decoration: underline; color: white;">How to ask when <br> doing
+                        User Research</p> <br>
+                    <p style="font-size: 18px; color: gray;">Bro, the story is that you want to make an application for
+                        <br>
+                        buying and selling goods on the market. During user <br> research, what do you think you will
+                        ask people?
+                    </p>
+                </div>
+
+            </div>
+
+            <div
+                class="bg-[#1D1E25] pt-[-40px] flex justify-center gap-10 sm:flex-col sm:items-center sm:p-3 md:flex-col md:items-center md:p-3">
+                <div class="mt-[270px] sm:mt-5 md:mt-5">
+                    <img src="./img/Rectangle 37.png" alt="" style="width: 500px;">
+                    <p style="font-size: 36px; color: white;">Layout Exploration — Simple <br> exercise but big effect
+                    </p> <br>
+                    <p style="font-size: 18px; color: gray;">Make alternatives or other options for the design we are
+                        <br> making.
+                        For example, we are creating a website design. <br> Then there is the testimonial section
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/Rectangle 36.png" alt="" style="width: 550px;">
+                    <p style="font-size: 40px; color: white;">Webflow Break the <br> Coding Barrier</p> <br>
+                    <p style="font-size: 18px; color: gray;">Webflow is web design tool as well as a hosting platform
+                        <br>
+                        and CMS all in one. While you are probably familiar with all <br> of these, they are usually
+                        entirely separate tools.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div
+                class="flex items-center justify-evenly gap-96 pt-10 sm:gap-2 sm:justify-center md:gap-2 sm:p-5 md:justify-center md:p-5">
+                <div class="flex gap-8">
+
+                    <div>
+                        <p style="font-weight: 400; font-size: 35px;">Articles</p>
+                        <p style="color: gray;">Complex tech decoded by engineers, <br> business trends analyzed by
+                            experts.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./img/Frame 1171275052.png" alt="">
+                    <img src="./img/Frame 1171275053.png" alt="">
+                </div>
+            </div>
+            <div class=" pt-20 flex justify-end gap-5 sm:flex-col sm:items-center sm:p3 md:p-3 md:items-center md:flex-col">
+                <div>
+                    <img src="./img/Image (18).png" alt="" style="width: 350px;">
+                    <p style="font-size: 27px;">List of UX Designer <br> Portfolio / Case Studies <br>
+                        where you can make money
+                    </p> <br>
+                    <p style="font-size: 16px; color: gray;">Here are some portfolios / Case Studies from <br> UX
+                        Designers
+                        that you can use as a reference <br> for creating a portfolio. Two interesting things <br> from
+                        their portfolio are:</p> <br>
+                    <p class="border border-gray-150 w-32 h-10 flex justify-center items-center rounded-2xl "> Read More
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./img/Image (19).png" alt="" style="width: 350px;">
+                    <p style="font-size: 32px;">Skyrocketing in The <br> Designing Career, Why <br> Not?
+                    </p> <br>
+                    <p style="font-size: 16px; color: gray;">Ever thought of jumping into the world of <br>
+                     design as a career? If not, you may want to <br>
+                      look at what the word ‘design’ actually means. <br>
+                       Design is a method of designing aesthetic <br> actions that are carried out.</p> <br>
+                    <p class="border border-gray-150 w-32 h-10 flex justify-center items-center rounded-2xl "> Read More
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/Image (20).png" alt="" style="width: 350px;">
+                    <p style="font-size: 27px;">Elements that may be missed <br> when designing the UI
+                    </p> <br>
+                    <p style="font-size: 16px; color: gray;">This is an article that talks about the little <br>
+                     elements that are often overlooked when <br> designing UI.</p> <br>
+                    <p class="border border-gray-150 w-32 h-10 flex justify-center items-center rounded-2xl "> Read More
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div
+            class="w-full mt-16 flex justify-center gap-72 sm:flex-col sm:items-center sm:gap-2 md:flex-col md:items-center md:gap-2 sm:w-auto">
+            <div
+                class="bg-pattern bg-cover h-[400px] w-[600px] flex flex-col items-center justify-center sm:w-[100%] sm:text-center sm:items-center">
+
+                <p style="font-size: 45px;" class="sm:text-center">Think beyond the wave</p>
+                <div class="flex items-start gap-3 sm:flex-col sm:items-center sm:gap-2">
+                    <img src="img/Line 69.png" alt="" style="padding-top: 10px;">
+                    <p style="font-size: 15px; font-weight: 500;" class="sm:text-center">
+                        Ask about Sans products, pricing, <br>
+                        implementation, or anything else. Our highly <br>
+                        trained reps are standing by, ready to help
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center sm:items-start">
+                <p class="w-32 text-[white] bg-[black] h-12 text-[22px] flex justify-center items-center rounded-3xl">
+                    Try for free
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-28 sm:mt-5 md:mt-5">
+            <div class="flex flex-col items-start">
+                <img src="./img/Logo (3).png" alt="">
+                <p style="color: gray; font-size: 13px;">We built an elegant solution. Our team <br>
+                    created a fully integrated sales and <br> marketing solution for SMBs</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Company</p>
+                <p style="color: gray; font-size: 13px;">About</p>
+                <p style="color: gray; font-size: 13px;">Pricing</p>
+                <p style="color: gray; font-size: 13px;">Jobs</p>
+                <p style="color: gray; font-size: 13px;">Blog</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Product</p>
+                <p style="color: gray; font-size: 13px;">Sales Software</p>
+                <p style="color: gray; font-size: 13px;">Marketplace</p>
+                <p style="color: gray; font-size: 13px;">Terms & Conditions</p>
+                <p style="color: gray; font-size: 13px;">Privacy Policy</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Discover</p>
+                <p style="color: gray; font-size: 13px;">CRM Comparision</p>
+                <p style="color: gray; font-size: 13px;">Partner Program</p>
+                <p style="color: gray; font-size: 13px;">What is CRM</p>
+                <p style="color: gray; font-size: 13px;">Resource</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Help Center</p>
+                <p style="color: gray; font-size: 13px;">Community</p>
+                <p style="color: gray; font-size: 13px;">Knowledge Base</p>
+                <p style="color: gray; font-size: 13px;">Academy</p>
+                <p style="color: gray; font-size: 13px;">Support</p>
+            </div>
+        </div>
+        <div
+            class=" hidden sm:flex sm:justify-center sm:items-center sm:gap-10 sm:mt-5   md:flex md:justify-center md:items-center md:gap-10 md:mt-5">
+            <img src="./img/Social icon.png" alt="">
+            <img src="./img/Social icon (1).png" alt="">
+            <img src="./img/Social icon (2).png" alt="">
+            <img src="./img/Social icon (3).png" alt="">
+        </div>
+        <div class="text-[gray] text-[13px] pt-10 flex flex-col items-center">
+            <img src="./img/Divider.png" alt="">
+            <p>© Copyright 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    </body>
