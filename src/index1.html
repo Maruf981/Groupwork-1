@@ -1,12 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px]">
+        <div class="flex gap-[500px] sm:gap-10 md:gap-10">
+            <img src="./img/Logo (2).png" alt="">
+            <div class="flex items-center gap-8">
+                <p class="sm:hidden md:hidden">Home</p>
+                <p class="sm:hidden md:hidden">About</p>
+                <p class="sm:hidden md:hidden">Blog</p>
+                <p class="sm:hidden md:hidden">Pricing</p>
+
+
+                <select name="" id="pageSelector" onchange="navigateToPage()">
+                    <option value="" disabled selected>
+                        <p style="font-size: 18px; font-weight: bold;">Contact Us -></p>
+                    </option>
+
+                    <option value="index2.html">Page 2</option>
+                    <option value="index3.html">Page 3</option>
+                    <option value="index4.html">Page 4</option>
+                    <option value="index5.html">Page 5</option>
+                    <option value="index6.html">Page 6</option>
+
+                </select>
+
+                <script>
+                    function navigateToPage() {
+                        const selector = document.getElementById('pageSelector');
+                        const selectedPage = selector.value;
+                        if (selectedPage) {
+                            window.location.href = selectedPage;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </navbar>
+    <header>
+        <div class="flex justify-center gap-10 pt-14 sm:flex-col sm:items-center md:flex-col md:items-center sm:p-3">
+            <div class="flex flex-col gap-28">
+                <p style="font-size: 45px; font-weight: 600;">Digitally forward <br> creative</p>
+                <div class="flex items-start gap-3">
+                    <img src="./img/Line 69.png" alt="" style="padding-top: 12px;">
+                    <p style="font-size: 18px; font-weight: 500;">When it comes to interactive <br>
+                        marketing, we've got you covered. <br>
+                        Be where the world is going</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-56 h-10 border-b-2 border-gray-150 focus:border-blue-500">
+                    <p class="text-[white] bg-[black] flex justify-center items-center w-32 h-10 rounded-3xl">Try for
+                        free</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/Sales - Light.png" alt="" style="width: 550px;">
+                <div
+                    class="bg-[black] rounded-xl flex items-center p-3 gap-24 w-[400px] ml-16 mt-[-90px] sm:mt-0 sm:w-[97%] sm:m-auto md:mt-0 md:w-[95%] md:m-auto">
+                    <div>
+                        <p style="color: gray;">Sales</p>
+                        <p style="color: white; font-size: 24px; font-weight: 500;">$31,092</p>
+                        <p style="color: gray;"><span style="color: green;">4.2% </span> from last year</p>
+                    </div>
+                    <div>
+                        <p style="color: gray;">Marketing</p>
+                        <p style="color: white; font-size: 24px; font-weight: 500;">$29,128</p>
+                        <p style="color: gray;"><span style="color: red;">1.2% </span> from last year</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ml-[-290px] sm:ml-0">
+                <img src="./img/Customer Growth - Light.png" alt="">
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="mt-16 bg-[#1D1E25] pt-14 pb-14">
+            <div class="ml-20 flex flex-col gap-6 sm:ml-0 sm:p-3 md:ml-0 md:p-3">
+                <p style="font-size: 40px; font-weight: 600; color: white;"
+                    class="text-base leading-tight sm:text-[25px]">Coca help our client solve <br> complex customer
+                    problems <br> with date that does more.</p>
+                <p style="color: gray; font-size: 15px;">Our platform offers the modern enterprise full control of how
+                    date can be <br>
+                    access and used with industry leading software solutions for identity, <br> activation, and date
+                    collaboration</p>
+            </div>
+            <div class="flex justify-center gap-72 mt-10 sm:flex-col sm:p-3 sm:gap-10 md:flex-col md:p-3 md:gap-10">
+                <div class="flex flex-col gap-10">
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (2).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Build your date <br> fundamental</p>
+                        <p style="color: gray; font-size: 15px;">Build access to date, develop valuable business
+                            insights <br>
+                            and drive revenue while maintaining full control over <br> access and use of date at all
+                            times.</p>
+                    </div>
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (3).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Activate your <br> date</p>
+                        <p style="color: gray; font-size: 15px;">Accurately address your specific audiences at scale
+                            across <br>
+                            any channel, platform, publisher or network and safely <br> translate date between identity
+                            space to improve results.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10">
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (4).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Measure more <br> effective</p>
+                        <p style="color: gray; font-size: 15px;">Effectively measure people-based campaigns with <br>
+                            the freedom to choose from best-of breed partners <br> to optimize and drive media
+                            innovation.</p>
+                    </div>
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (5).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Strengthen <br> consumer privacy</p>
+                        <p style="color: gray; font-size: 15px;">Protect your customer date with leading
+                            privacy-preserving <br>
+                            technologies and advanced techniques to minimize date <br> movement while still enabling
+                            insight generation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-14 gap-48 sm:flex-col sm:p-3 sm:gap-10 md:flex-col md:p-3 md:gap-10">
+            <div>
+                <img src="./img/Image (14).png" alt="" style="width: 470px;">
+                <img src="./img/Bar Chart.png" alt="" style="width: 190px;"
+                    class="mt-[-220px] ml-[260px] sm:mt-0 sm:ml-24 md:mt-0 md:ml-24">
+            </div>
+            <div>
+                <div>
+                    <p style="font-size: 40px; font-weight: 500;" class="text-base leading-tight">Passion to increase
+                        <br>
+                        company revenue up <br> to 85%
+                    </p> <br>
+                    <p style="color: gray; font-size: 15px;">Automate your sales, marketing and <br> service in one
+                        platform. Avoid date leaks <br> and enable consistent messaging</p>
+                </div>
+                <div class="flex flex-col gap-14 pt-10">
+                    <div class="flex items-center gap-2">
+                        <img src="./img/Icon (6).png" alt="">
+                        <p style="font-weight: 500; font-size: 14px;">Close more deals with single - page <br> contact
+                            managment</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="./img/Icon (6).png" alt="">
+                        <p style="font-weight: 500; font-size: 14px;">Enjoy one-click calling, call scripts and <br>
+                            voicemail automation</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="./img/Icon (6).png" alt="">
+                        <p style="font-weight: 500; font-size: 14px;">Take stages and milestones of your <br> deals to
+                            keep the sales process an track</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-center gap-52 mt-10 sm:flex-col sm:gap-12 md:flex-col md:gap-12">
+                <div class="flex items-center gap-44 sm:gap-14 sm:justify-center md:gap-14 md:justify-center">
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">17k</p>
+                        <p style="color: gray; font-size: 14px;">happy customers on <br> worldwide</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">15+</p>
+                        <p style="color: gray; font-size: 14px;">Hours of work <br> experience</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-44 sm:gap-5 md:gap-5 sm:justify-center md:justify-center">
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">50+</p>
+                        <p style="color: gray; font-size: 14px;">Creativity & passionate <br> members</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">100+</p>
+                        <p style="color: gray; font-size: 14px;">Integrations lorem <br> ipsum integrations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 sm:m-auto sm:w-[95%]">
+                <img src="./img/Image (15).png" alt="" style="width: 1050px; margin: auto;">
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
