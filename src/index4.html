@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+  <navbar class="flex justify-center gap-28 items-center h-20 text-[14px]">
+    <div class="flex gap-[500px] sm:gap-10 md:gap-10">
+      <img src="./img/Logo (20).png" alt="">
+      <div class="flex items-center gap-8">
+        <p class="sm:hidden md:hidden">Home</p>
+        <p class="sm:hidden md:hidden">About</p>
+        <p class="sm:hidden md:hidden">Blog</p>
+        <p class="sm:hidden md:hidden">Pricing</p>
+
+
+        <select name="" id="pageSelector" onchange="navigateToPage()">
+          <option value="" disabled selected>
+            <p style="font-size: 18px; font-weight: bold;">Contact Us -></p>
+          <option value="index1.html">Page 1</option>
+          <option value="index2.html">Page 2</option>
+          <option value="index3.html">Page 3</option>
+          <option value="index4.html">Page 4</option>
+          <option value="index5.html">Page 5</option>
+          <option value="index6.html">Page 6</option>
+
+        </select>
+
+        <script>
+          function navigateToPage() {
+            const selector = document.getElementById('pageSelector');
+            const selectedPage = selector.value;
+            if (selectedPage) {
+              window.location.href = selectedPage;
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </navbar>
+  <p class="text-5xl w-[500px] ml-[180px] mt-[40px]">Contact our team to find out more</p>
+  <div class="flex justify-center gap-36 sm:flex-col sm:items-center md:flex-col md:items-center sm:m-auto">
+    <div class="mt-16 sm:w-[100%]">
+      <img class="w-[900px]" src="./img/Map (4).png" alt="">
+      <div class="w-[220px] pl-4 pt-2 rounded-2xl ml-[635px] relative h-[100px] bg-white shadow-lg -mt-[280px] z-10">
+        <p class="text-black">Yogja, INA</p>
+        <p class="text-gray-400">100 Smith Street </p>
+        <p class="text-gray-400">Collingwood VIC 3066 AU</p>
+        <img class="mt-[50px] ml-[80px]" src="./img/Pin.png" alt="">
+      </div>
+    </div>
+    <div class="mt-[80px] sm:items-center sm:m-auto">
+      <div>
+        <p class="text-xl">Support</p>
+        <p class="text-gray-400 w-[150px] mt-3">Our friendly team is here to help.</p>
+        <p class="mt-2">support@sans.com</p>
+        <hr class="mt-3 w-[150px]">
+      </div>
+      <div>
+        <p class="text-xl mt-5">Sales</p>
+        <p class="text-gray-400 w-[150px] mt-3">Questions or queries? Get in touch!</p>
+        <p class="mt-2">sales@sans.com</p>
+        <hr class="mt-3 w-[150px]">
+      </div>
+      <div>
+        <p class="text-xl mt-5">Phone</p>
+        <p class="w-[150px]">Mon-Fri from 8am to 5pm.</p>
+        <p class="mt-3">+1 (435) 345-7655</p>
+        <hr class="mt-3 w-[150px]">
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center gap-40 sm:flex-col sm:items-center md:flex-col md:items-center">
+    <div class="mt-[70px]">
+      <p class="text-4xl">890+</p>
+      <p class="text-gray-400 w-[300px] mt-3">Some big companies that we work with, and trust us very much</p>
+    </div>
+    <div>
+      <div class="flex mt-[30px] sm:flex-col sm:items-center">
+        <img src="./img/Airbnb Logo.png" alt="">
+        <img src="./img/Amazon Logo.png" alt="">
+        <img src="./img/FedEx Logo.png" alt="">
+        <img src="./img/Microsoft Logo.png" alt="">
+      </div>
+      <div class="flex sm:flex-col sm:items-center">
+        <img src="./img/Google Logo.png" alt="">
+        <img src="./img/OLA Logo.png" alt="">
+        <img src="./img/Walmart Logo.png" alt="">
+        <img src="./img/OYO Logo.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-center sm:flex-col sm:items-center">
+    <div class="w-[500px] h-[620px] shadow-2xl mr-[-100px] bg-[white] z-10 sm:w-[100%] md:w-[100%]">
+      <p class="text-3xl pt-[30px] pl-[30px]">Let’s level up your brand</p>
+      <p class="mt-3 pl-[30px]">You can reach us anytime hellosansbrothers@gmail.com</p>
+
+      <div class="flex justify-center gap-7  ml-30px sm:flex-col items-center">
+        <div>
+          <p>First name</p>
+          <input class="w-[200px] h-[40px] border-2 rounded-xl pl-[20px] mt-3" placeholder="First name" type="text">
+        </div>
+        <div>
+          <p>Last name</p>
+          <input class="w-[200px] h-[40px] border-2 rounded-xl pl-[20px] mt-3" placeholder="Last name" type="text">
+        </div>
+      </div>
+      <div>
+        <p class="mt-5 ml-[50px]">Email</p>
+        <input class="w-[430px] h-[40px] border-2 rounded-xl mt-3 ml-[30px] pl-[20px]" placeholder="you@company.com"
+          type="text">
+      </div>
+      <div>
+        <p class="mt-5 ml-[40px]">Phone number</p>
+        <input class="w-[430px] h-[40px] border-2 rounded-xl mt-3 ml-[30px] pl-[20px]" placeholder="+1 (555) 000-0000"
+          type="text">
+      </div>
+      <div class="ml-[30px]">
+        <p class="mt-5 ml-[20px]">Message</p>
+        <textarea class="w-[430px] h-[80px] pl-[20px] mt-5 border-2 rounded-2xl" placeholder="Leave us a message..."
+          name="" id=""></textarea>
+      </div>
+      <div>
+        <button class="w-[200px] h-[50px] bg-black text-white rounded-[60px] mt-5 ml-[120px]">Get Started</button>
+      </div>
+    </div>
+    <div class="sm:w-[100%]">
+      <img class="w-[700px]" src="./img/Image (40).png" alt="">
+    </div>
+  </div>
+  <footer class="w-full h-[777px] sm:h-auto bg-[#1D1E25]">
+    <div
+      class="w-[80%] sm:w-[90%] m-auto flex sm:flex-col items-center justify-between sm:py-11 py-24"
+    >
+      <div>
+        <h2 class="text-[44px] sm:text-[30px] text-white font-bold">
+          Think beyond the wave
+        </h2>
+        <p
+          class="text-[16px] sm:w-[80%] sm:m-auto sm:text[25px] sm:text-white text-gray-400 py-4"
+        >
+          Ask about Sans products, pricing, implementation, or anything <br />
+          else. Our highly trained reps are standing by, ready to help
+        </p>
+      </div>
+      <div class="sm:w-[80%] sm:m-auto">
+        <button class="py-3 px-10 text-black bg-white rounded-2xl font-bold">
+          Try for free
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="w-[80%] sm:w-[90%] m-auto flex sm:flex-col items-center justify-between border-b-2 border-gray-700 py-10"
+    >
+      <div class="w-[292px]">
+        <img src="./img/Logo (6).png" alt="" />
+        <p class="text-gray-500">
+          We built an elegant solution. Our team created a fully integrated
+          sales and marketing solution for SMBs
+        </p>
+      </div>
+      <div class="w-[750px] flex justify-around sm:hidden">
+        <ul>
+          <li class="pb-7 text-white text-[18px]">Company</li>
+          <li class="pb-4 text-gray-500 text-[16px]">About</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Pricing</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Jobs</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Blog</li>
+        </ul>
+
+        <ul>
+          <li class="pb-7 text-white text-[18px]">Product</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Sales Software</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Marketplace</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Terms & Conditions</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Privacy Policy</li>
+        </ul>
+
+        <ul>
+          <li class="pb-7 text-white text-[18px]">Discover</li>
+          <li class="pb-4 text-gray-500 text-[16px]">CRM Comparision</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Partner Program</li>
+          <li class="pb-4 text-gray-500 text-[16px]">What is CRM</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Resource</li>
+        </ul>
+
+        <ul>
+          <li class="pb-7 text-white text-[18px]">Help Center</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Community</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Knowledge Base</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Academy</li>
+          <li class="pb-4 text-gray-500 text-[16px]">Support</li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="w-[80%] sm:w-[90%] m-auto flex sm:flex-col justify-between py-11 md:flex-col md:justify-between md:py-11 sm:m-auto"
+    >
+      <div class="flex sm:flex-wrap sm:justify-center gap-6">
+        
+        <div>
+          <img src="./img/Social icon.png" alt="">
+        </div>
+        <div>
+          <img src="./img/Social icon (1).png" alt="">
+        </div>
+        <div>
+          <img src="./img/Vector (18).png" alt="">
+        </div>
+        <div>
+          <img src="./img/Vector (19).png" alt="">
+        </div>
+
+        <div
+          class="flex gap-7 sm:ml-0 ml-6 text-white sm:text-[14px] sm:text-gray-500 text-[16px]"
+        >
+          <p>Privacy Policy</p>
+          <p>Privacy Policy</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+      <div class="sm:py-5 sm:ml-7">
+        <p class="text-white sm:text-gray-500 text-[16px]">
+          © Copyright 2023,t All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
