@@ -1,0 +1,488 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px]">
+        <div class="flex gap-[500px] sm:gap-10 md:gap-10">
+            <img src="./img/Logo (2).png" alt="">
+            <div class="flex items-center gap-8">
+                <p class="sm:hidden md:hidden">Home</p>
+                <p class="sm:hidden md:hidden">About</p>
+                <p class="sm:hidden md:hidden">Blog</p>
+                <p class="sm:hidden md:hidden">Pricing</p>
+
+
+                <select name="" id="pageSelector" onchange="navigateToPage()">
+                    <option value="" disabled selected>
+                        <p style="font-size: 18px; font-weight: bold;">Contact Us -></p>
+
+                    <option value="index2.html">Page 2</option>
+                    <option value="index3.html">Page 3</option>
+                    <option value="index4.html">Page 4</option>
+                    <option value="index5.html">Page 5</option>
+                    <option value="index6.html">Page 6</option>
+
+                </select>
+
+                <script>
+                    function navigateToPage() {
+                        const selector = document.getElementById('pageSelector');
+                        const selectedPage = selector.value;
+                        if (selectedPage) {
+                            window.location.href = selectedPage;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </navbar>
+    <header>
+        <div class="flex justify-center gap-10 pt-14 sm:flex-col sm:items-center md:flex-col md:items-center sm:p-3">
+            <div class="flex flex-col gap-28">
+                <p style="font-size: 45px; font-weight: 600;">Digitally forward <br> creative</p>
+                <div class="flex items-start gap-3">
+                    <img src="./img/Line 69.png" alt="" style="padding-top: 12px;">
+                    <p style="font-size: 18px; font-weight: 500;">When it comes to interactive <br>
+                        marketing, we've got you covered. <br>
+                        Be where the world is going</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-56 h-10 border-b-2 border-gray-150 focus:border-blue-500">
+                    <p class="text-[white] bg-[black] flex justify-center items-center w-32 h-10 rounded-3xl">Try for
+                        free</p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/Sales - Light.png" alt="" style="width: 550px;">
+                <div
+                    class="bg-[black] rounded-xl flex items-center p-3 gap-24 w-[400px] ml-16 mt-[-90px] sm:mt-0 sm:w-[97%] sm:m-auto md:mt-0 md:w-[95%] md:m-auto">
+                    <div>
+                        <p style="color: gray;">Sales</p>
+                        <p style="color: white; font-size: 24px; font-weight: 500;">$31,092</p>
+                        <p style="color: gray;"><span style="color: green;">4.2% </span> from last year</p>
+                    </div>
+                    <div>
+                        <p style="color: gray;">Marketing</p>
+                        <p style="color: white; font-size: 24px; font-weight: 500;">$29,128</p>
+                        <p style="color: gray;"><span style="color: red;">1.2% </span> from last year</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ml-[-290px] sm:ml-0">
+                <img src="./img/Customer Growth - Light.png" alt="">
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="mt-16 bg-[#1D1E25] pt-14 pb-14">
+            <div class="ml-20 flex flex-col gap-6 sm:ml-0 sm:p-3 md:ml-0 md:p-3">
+                <p style="font-size: 40px; font-weight: 600; color: white;"
+                    class="text-base leading-tight sm:text-[25px]">Coca help our client solve <br> complex customer
+                    problems <br> with date that does more.</p>
+                <p style="color: gray; font-size: 15px;">Our platform offers the modern enterprise full control of how
+                    date can be <br>
+                    access and used with industry leading software solutions for identity, <br> activation, and date
+                    collaboration</p>
+            </div>
+            <div class="flex justify-center gap-72 mt-10 sm:flex-col sm:p-3 sm:gap-10 md:flex-col md:p-3 md:gap-10">
+                <div class="flex flex-col gap-10">
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (2).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Build your date <br> fundamental</p>
+                        <p style="color: gray; font-size: 15px;">Build access to date, develop valuable business
+                            insights <br>
+                            and drive revenue while maintaining full control over <br> access and use of date at all
+                            times.</p>
+                    </div>
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (3).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Activate your <br> date</p>
+                        <p style="color: gray; font-size: 15px;">Accurately address your specific audiences at scale
+                            across <br>
+                            any channel, platform, publisher or network and safely <br> translate date between identity
+                            space to improve results.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-10">
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (4).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Measure more <br> effective</p>
+                        <p style="color: gray; font-size: 15px;">Effectively measure people-based campaigns with <br>
+                            the freedom to choose from best-of breed partners <br> to optimize and drive media
+                            innovation.</p>
+                    </div>
+                    <div class=" flex flex-col items-start gap-4 sm:items-center md:items-center">
+                        <img src="./img/Icon (5).png" alt="">
+                        <p style="font-size: 25px; font-weight: 600; color: white;"
+                            class="text-base leading-tight sm:text-[25px]">Strengthen <br> consumer privacy</p>
+                        <p style="color: gray; font-size: 15px;">Protect your customer date with leading
+                            privacy-preserving <br>
+                            technologies and advanced techniques to minimize date <br> movement while still enabling
+                            insight generation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-14 gap-48 sm:flex-col sm:p-3 sm:gap-10 md:flex-col md:p-3 md:gap-10">
+            <div>
+                <img src="./img/Image (14).png" alt="" style="width: 470px;">
+                <img src="./img/Bar Chart.png" alt="" style="width: 190px;"
+                    class="mt-[-220px] ml-[260px] sm:mt-0 sm:ml-24 md:mt-0 md:ml-24">
+            </div>
+            <div>
+                <div>
+                    <p style="font-size: 40px; font-weight: 500;" class="text-base leading-tight">Passion to increase
+                        <br>
+                        company revenue up <br> to 85%
+                    </p> <br>
+                    <p style="color: gray; font-size: 15px;">Automate your sales, marketing and <br> service in one
+                        platform. Avoid date leaks <br> and enable consistent messaging</p>
+                </div>
+                <div class="flex flex-col gap-14 pt-10">
+                    <div class="flex items-center gap-2">
+                        <img src="./img/Icon (6).png" alt="">
+                        <p style="font-weight: 500; font-size: 14px;">Close more deals with single - page <br> contact
+                            managment</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="./img/Icon (6).png" alt="">
+                        <p style="font-weight: 500; font-size: 14px;">Enjoy one-click calling, call scripts and <br>
+                            voicemail automation</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="./img/Icon (6).png" alt="">
+                        <p style="font-weight: 500; font-size: 14px;">Take stages and milestones of your <br> deals to
+                            keep the sales process an track</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="flex justify-center gap-52 mt-10 sm:flex-col sm:gap-12 md:flex-col md:gap-12">
+                <div class="flex items-center gap-44 sm:gap-14 sm:justify-center md:gap-14 md:justify-center">
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">17k</p>
+                        <p style="color: gray; font-size: 14px;">happy customers on <br> worldwide</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">15+</p>
+                        <p style="color: gray; font-size: 14px;">Hours of work <br> experience</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-44 sm:gap-5 md:gap-5 sm:justify-center md:justify-center">
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">50+</p>
+                        <p style="color: gray; font-size: 14px;">Creativity & passionate <br> members</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 35px; font-weight: bold;">100+</p>
+                        <p style="color: gray; font-size: 14px;">Integrations lorem <br> ipsum integrations</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="pt-10 sm:m-auto sm:w-[95%]">
+                    <img src="./img/Image (15).png" alt="" style="width: 1050px; margin: auto;">
+                </div>
+                <div class="flex justify-center pt-10 gap-64 sm:flex-col sm:justify-center sm:p-3 sm:gap-10">
+                    <div>
+                        <p style="font-size: 40px; font-weight: 500;" class="text-base leading-tight"> Lift your
+                            business to new <br> heights with our digital <br> marketing services </p>
+                    </div>
+                    <div>
+                        <p style="color: gray;">To build software that gives customer facing <br>
+                            teams in small and medium-sized businesses <br>
+                            the ability to create rewarding and long-lasting <br>
+                            relationships with customers</p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex justify-center items-center gap-24 mt-16  border border-gray-150 h-72 sm:flex-col sm:gap-10 sm:justify-center md:flex-col md:gap-10 md:justify-center">
+                <div>
+                    <p style="font-size: 35px; font-weight: bold;">890+</p>
+                    <p style="color: gray; font-size: 14px;">some big companies that we work <br> with, and trust us
+                        very much</p>
+                </div>
+                <div class="flex gap-14 sm:gap-8">
+                    <div class="flex flex-col gap-7">
+                        <img src="./img/Airbnb Logo.png" alt="">
+                        <img src="./img/Google Logo.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-7">
+                        <img src="./img/Amazon Logo.png" alt="">
+                        <img src="./img/OLA logo.png" alt="">
+                    </div>
+                </div>
+                <div class="flex  gap-14 sm:gap-8">
+                    <div class="flex flex-col gap-7">
+                        <img src="./img/FedEx Logo.png" alt="">
+                        <img src="./img/Walmart Logo.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-7">
+                        <img src="./img/Microsoft Logo.png" alt="">
+                        <img src="./img/OYO Logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div
+                class="flex flex-col ml-32 pt-10 sm:ml-0 sm:items-center sm:justify-center sm:p-5 sm:mt-10 md:ml-0 md:items-center md:justify-center md:p-5 md:mt-10">
+                <div>
+                    <p style="font-size: 40px; font-weight: 500;" class="text-base leading-tight"> Advertise, analyze,
+                        and <br> optimize! We do it all for <br> you </p>
+
+                </div> <br>
+                <div>
+                    <p style="color: gray;">Build more meaningful and lasting relationships - <br>
+                        better understand their needs, identify new opportunities<br> to help address
+                        any problems faster</p>
+                </div>
+            </div>
+            <div
+                class="pt-14 flex justify-center gap-16 sm:flex-col sm:items-center sm:p-3 md:flex-col md:items-center md:p-3">
+                <div
+                    class="flex gap-10  sm:flex-col sm:items-center sm:justify-center md:flex-col md:items-center md:justify-center">
+                    <div>
+                        <img src="./img/Frame 1171275175.png" alt="" style="width: 200px;">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p style="font-size: 25px; font-weight: 500;" class="text-base leading-tight"> Lead happiness
+                            <br>
+                            for customers
+                        </p> <br>
+                        <p style="color: gray;">Build more meaningful and lasting <br>
+                            relationships - better understand <br>
+                            their needs, identify new <br>
+                            opportunities to help address <br>
+                            any problems faster</p>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-10  sm:flex-col sm:items-center sm:justify-center md:flex-col md:items-center md:justify-center  ">
+                    <div>
+                        <img src="./img/Frame 1171275176.png" alt="" style="width: 200px;">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p style="font-size: 25px; font-weight: 500;" class="text-base leading-tight"> Mutually support
+                            <br> each other
+                        </p> <br>
+                        <p style="color: gray;">Build more meaningful and lasting <br>
+                            relationships - better understand <br>
+                            their needs, identify new <br>
+                            opportunities to help address <br>
+                            any problems faster</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div
+                class="pt-14 flex justify-center gap-16 sm:flex-col sm:items-center sm:p-3 md:flex-col md:items-center md:p-3">
+                <div
+                    class="flex gap-10  sm:flex-col sm:items-center sm:justify-center md:flex-col md:items-center md:justify-center">
+                    <div>
+                        <img src="./img/Frame 1171275178.png" alt="" style="width: 200px;">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p style="font-size: 25px; font-weight: 500;" class="text-base leading-tight"> Have fun growing
+                            <br> together
+                        </p> <br>
+                        <p style="color: gray;">Build more meaningful and lasting <br>
+                            relationships - better understand <br>
+                            their needs, identify new <br> opportunities to help address any <br> problems faster</p>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-10  sm:flex-col sm:items-center sm:justify-center md:flex-col md:items-center md:justify-center">
+                    <div>
+                        <img src="./img/Frame 1171275177.png" alt="" style="width: 200px;">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p style="font-size: 25px; font-weight: 500;" class="text-base leading-tight"> Make Your <br>
+                            Business Grow</p> <br>
+                        <p style="color: gray;">Build more meaningful and lasting <br>
+                            relationships - better understand <br>
+                            their needs, identify new <br>
+                            opportunities to help address <br>
+                            any problems faster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div
+                class="flex flex-col justify-center items-center pt-10 sm:ml-3 sm:items-center sm:justify-center md:ml-3 md:items-center md:justify-center">
+                <div>
+                    <p style="font-size: 40px; font-weight: 500;" class="text-base leading-tight"> Trending news from
+                        Coca </p>
+
+                </div> <br>
+                <div>
+                    <p style="color: gray;">we have some new Service to pamper you</p>
+                </div>
+            </div>
+            <div class="flex justify-center pt-10 sm:flex-col sm:items-center p-3">
+                <div class="flex flex-col gap-2">
+                    <img src="./img/Rectangle 5650.png" alt="" style="width: 520px;">
+                    <div class="flex justify-between text-[gray]">
+                        <p>Published in Insight Jan 30, 2021</p>
+                        <p>by : Albert Sans</p>
+                    </div>
+                    <p style="font-size: 24px; font-weight: 500;">What makes an authentic employee <br> profile, and why
+                        does it matter ?</p>
+                </div>
+                <div>
+                    <img src="./img/Group 3260.png" alt="">
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <img src="./img/Rectangle 5651.png" alt="" style="width: 520px;">
+                    <div class="flex justify-between text-[gray]">
+                        <p>Published in Insight Jan 30, 2021</p>
+                        <p>by : Albert Sans</p>
+                    </div>
+                    <p style="font-size: 24px; font-weight: 500;">What makes an authentic employee <br> profile, and why
+                        does it matter ?</p>
+                </div>
+
+            </div>
+        </div>
+        <div
+            class="flex justify-center pt-16 gap-80 sm:flex-col sm:justify-center sm:items-center sm:p-3 sm:gap-10 md:flex-col md:justify-center md:items-center md:p-3 md:gap-10">
+            <div>
+                <p class="text-base leading-tight sm:text-center sm:text-[30px] sm:leading-snug"
+                    style="font-size: 45px; font-weight: 500;">
+                    What our customer <br>
+                    are saying
+                </p>
+            </div>
+            <div>
+                <p class="text-left sm:text-center" style="color: gray;">
+                    We are trusted by numerous companies from <br>
+                    different businesses to meet their needs
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="flex gap-5 justify-center mt-16">
+                <div>
+                    <img src="./img/“.png" alt="">
+                </div>
+                <div class="pt-16 flex items-start flex-col p-5">
+                    <img src="./img/Rating.png" alt="">
+                    <p style="font-weight: 500; font-size: 28px;">“With Agency the results are very satisfying. <br>
+                        wrapped with Hight quality and innovative design <br>
+                        that makes a surge of visitors on my website”</p>
+                </div>
+            </div>
+            <div
+                class="flex items-center justify-evenly gap-28 pt-6 sm:gap-2 sm:justify-center md:gap-2 sm:p-5 md:justify-center md:p-5">
+                <div class="flex gap-8">
+                    <div>
+                        <img src="./img/Ellipse 15.png" alt="">
+                    </div>
+                    <div>
+                        <p style="font-weight: 400; font-size: 22px;">Renee Wells</p>
+                        <p style="color: gray;">Product Designer, Quotient</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./img/Frame 1171275052.png" alt="">
+                    <img src="./img/Frame 1171275053.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div
+            class="w-full mt-16 flex justify-center gap-72 sm:flex-col sm:items-center sm:gap-2 md:flex-col md:items-center md:gap-2 sm:w-auto">
+            <div
+                class="bg-pattern bg-cover h-[400px] w-[600px] flex flex-col items-center justify-center sm:w-[100%] sm:text-center sm:items-center">
+
+                <p style="font-size: 45px;" class="sm:text-center">Think beyond the wave</p>
+                <div class="flex items-start gap-3 sm:flex-col sm:items-center sm:gap-2">
+                    <img src="img/Line 69.png" alt="" style="padding-top: 10px;">
+                    <p style="font-size: 15px; font-weight: 500;" class="sm:text-center">
+                        Ask about Sans products, pricing, <br>
+                        implementation, or anything else. Our highly <br>
+                        trained reps are standing by, ready to help
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center sm:items-start">
+                <p class="w-32 text-[white] bg-[black] h-12 text-[22px] flex justify-center items-center rounded-3xl">
+                    Try for free
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center gap-28 sm:mt-5 md:mt-5">
+            <div class="flex flex-col items-start">
+                <img src="./img/Logo (3).png" alt="">
+                <p style="color: gray; font-size: 13px;">We built an elegant solution. Our team <br>
+                    created a fully integrated sales and <br> marketing solution for SMBs</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Company</p>
+                <p style="color: gray; font-size: 13px;">About</p>
+                <p style="color: gray; font-size: 13px;">Pricing</p>
+                <p style="color: gray; font-size: 13px;">Jobs</p>
+                <p style="color: gray; font-size: 13px;">Blog</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Product</p>
+                <p style="color: gray; font-size: 13px;">Sales Software</p>
+                <p style="color: gray; font-size: 13px;">Marketplace</p>
+                <p style="color: gray; font-size: 13px;">Terms & Conditions</p>
+                <p style="color: gray; font-size: 13px;">Privacy Policy</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Discover</p>
+                <p style="color: gray; font-size: 13px;">CRM Comparision</p>
+                <p style="color: gray; font-size: 13px;">Partner Program</p>
+                <p style="color: gray; font-size: 13px;">What is CRM</p>
+                <p style="color: gray; font-size: 13px;">Resource</p>
+            </div>
+            <div class="flex flex-col items-start gap-1 sm:hidden md:hidden">
+                <p style="font-size: 15px; font-weight: 500;">Help Center</p>
+                <p style="color: gray; font-size: 13px;">Community</p>
+                <p style="color: gray; font-size: 13px;">Knowledge Base</p>
+                <p style="color: gray; font-size: 13px;">Academy</p>
+                <p style="color: gray; font-size: 13px;">Support</p>
+            </div>
+        </div>
+        <div
+            class=" hidden sm:flex sm:justify-center sm:items-center sm:gap-10 sm:mt-5   md:flex md:justify-center md:items-center md:gap-10 md:mt-5">
+            <img src="./img/Social icon.png" alt="">
+            <img src="./img/Social icon (1).png" alt="">
+            <img src="./img/Social icon (2).png" alt="">
+            <img src="./img/Social icon (3).png" alt="">
+        </div>
+        <div class="text-[gray] text-[13px] pt-10 flex flex-col items-center">
+            <img src="./img/Divider.png" alt="">
+            <p>© Copyright 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+=======
+>>>>>>> 4cdc881 (inom)
