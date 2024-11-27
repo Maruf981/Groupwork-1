@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+    <navbar class="flex justify-center gap-28 items-center h-20 text-[14px]">
+        <div class="flex gap-[500px] sm:gap-10 md:gap-10">
+            <img src="./img/Logo (20).png" alt="">
+            <div class="flex items-center gap-8">
+                <p class="sm:hidden md:hidden">Home</p>
+                <p class="sm:hidden md:hidden">About</p>
+                <p class="sm:hidden md:hidden">Blog</p>
+                <p class="sm:hidden md:hidden">Pricing</p>
+
+
+                <select name="" id="pageSelector" onchange="navigateToPage()">
+                    <option value="" disabled selected>
+                        <p style="font-size: 18px; font-weight: bold;">Contact Us -></p>
+                    <option value="index1.html">Page 1</option>
+                    <option value="index2.html">Page 2</option>
+                    <option value="index3.html">Page 3</option>
+                    <option value="index4.html">Page 4</option>
+                    <option value="index5.html">Page 5</option>
+                    <option value="index6.html">Page 6</option>
+
+                </select>
+
+                <script>
+                    function navigateToPage() {
+                        const selector = document.getElementById('pageSelector');
+                        const selectedPage = selector.value;
+                        if (selectedPage) {
+                            window.location.href = selectedPage;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </navbar>
+    <p class="text-4xl w-[450px] ml-[200px] mt-[60px]">How we perform long-running tasks using AWS services</p>
+    <div class="flex gap-14 ml-[200px] mt-12">
+        <div class="flex gap-5">
+<img src="./img/Ellipse 15.png" alt="">
+<div class="mt-2">
+    <p>Renee Wells</p>
+    <p class="text-gray-400">Product Designer, Quotient</p>
+</div>
+</div>
+<p class="text-gray-400 mt-8 ml-[250px]">10 min read  November 10, 2023</p>
+</div>
+<div>
+    <img class="w-[850px] h-[500px] ml-[200px] mt-5" src="./img/Rectangle 44.png" alt="">
+</div>
+<p class="w-[850px] ml-[200px] mt-12">Depending on the input, this can result in using a lot of processing power and time. The whole process would take approximately 5 seconds to return a result to the client. Keep in mind we’re talking about 1 item, a contact from a contact book. After a while, a new requirement is added. Solution must support companies that manage their contacts organized in files. We agreed to develop a web application that would support upload of dataset files, like .csv. The new web application should support third party integrations. Some of them are the ESP/CRM services, like Mailchimp. User does not need to see the result immediately. System can later notify the user about the result, when the process finishes. This information is the key that we need to leverage on when developing our solution. So here’s how we did it.</p>
+<p class="text-4xl mt-5 ml-[200px]">Initial approach</p>
+<p class="w-[850px] mt-5 ml-[200px]">Our initial approach went like this: The web application would read a .csv file line-by-line and submit an array of entries to the backend REST API. Processing is in real time, immediately after the user makes a request for the process to start, he expects a result. Another approach is to apply vertical scaling to AWS architecture. Meaning we used larger, more expensive instances that have more RAM and processing power. This system worked well for smaller datasets, maybe up to 5k entries, but for larger datasets multiple problems arose. This solution is prone to failure due to long request time. Also, because of some 3rd party services that aren’t optimized for large scale loads or they don’t have batch endpoints. 3rd party services also tend to protect their architecture from making a huge bill on their end. The whole process was done in real-time. The request can take a lot of time hanging in there while the backend would do all the work and return the result to the client. The request was limited to 300 seconds (at time of writing the article) before AWS would cancel it… Also I need to mention that the user has to wait a few minutes to see the results. They can’t use the app during the process, which makes for a bad user experience.</p>
+<div class="flex gap-8 ml-[200px] mt-5">
+    <div>
+        <img class="w-[150px]" src="./img/Rectangle 45.png" alt="">
+    </div>
+    <div>
+        <div class="flex gap-5">
+            <img src="./img/Social Icons.png" alt="">
+            <img src="./img/Social Icons (1).png" alt="">
+            <img src="./img/Social Icons (2).png" alt="">
+            <img src="./img/Social Icons (3).png" alt="">
+            <p class="mt-2">Share this article</p>
+        </div>
+        <p class="text-xl text-gray-400">Written by</p>
+        <p class="text-xl mt-3">Renee Wells</p>
+        <p class="text-xl text-gray-400">Product Designer, Quotient</p>
+        <p class="w-[500px] mt-3">Skilled in React Native, iOS and backend, Toni has a demonstrated knowledge of the information technology and services industry, with plenty of hands-on experience to back it up.</p>
+    </div>
+</div>
+<div class=" h-[550px] bg-black mt-5">
+<div class="flex justify-center gap-80">
+    <div class="text-white">
+        <p class="text-4xl pt-[90px]">Think beyond the wave</p>
+        <p class="w-[500px] text-gray-400 mt-2">Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help</p>
+    </div>
+    <div>
+        <button class="bg-white w-[150px] rounded-3xl h-[40px] mt-[120px]">Try for free</button>
+    </div>
+</div>
+<div class="flex justify-center mt-16 gap-[50px]">
+    <div>
+        <img src="./img/Logo (21).png" alt="">
+        <p class="text-gray-400 w-[300px]">We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs</p>
+    </div>
+    <div class="text-gray-400">
+        <p class="text-xl text-white">Company</p>
+        <p class="mt-3">About</p>
+        <p class="mt-3">Pricing</p>
+        <p class="mt-3">Jobs</p>
+        <p class="mt-3">Blog</p>
+    </div>
+    <div class="text-gray-400">
+        <p class="text-white text-xl">Product</p>
+        <p class="mt-3">Sales Software</p>
+        <p class="mt-3">Marketplace</p>
+        <p class="mt-3">Terms & Conditions</p>
+        <p class="mt-3">Privacy Policy</p>
+    </div>
+    <div class="text-gray-400">
+        <p class="text-xl text-white">Discover</p>
+        <p class="mt-3">CRM Comparision</p>
+        <p class="mt-3">Partner Program</p>
+        <p class="mt-3">What is CRM</p>
+        <p class="mt-3">Resource</p>
+    </div>
+    <div class="text-gray-400">
+        <p class="text-xl text-white">Help Center</p>
+        <p class="mt-3">Community</p>
+        <p class="mt-3">Knowledge Base</p>
+        <p class="mt-3">Academy</p>
+        <p class="mt-3">Support</p>
+    </div>
+</div>
+<hr class="w-[970px] ml-[190px] mt-5">
+<div class="flex justify-center gap-28 mt-5">
+    <div class="flex gap-10">
+        <img src="./img/Vector (18).png" alt="">
+        <img src="./img/Social icon.png" alt="">
+        <img src="./img/Social icon (1).png" alt="">
+        <img src="./img/Vector (19).png" alt="">
+    </div>
+    <div class="flex text-gray-400 gap-10">
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+        <p>Support</p>
+    </div>
+    <div class="text-gray-400">
+        <p>© Copyright 2023,t All Rights Reserved</p>
+    </div>
+</div>
+</div>
+</body>
+</html>
